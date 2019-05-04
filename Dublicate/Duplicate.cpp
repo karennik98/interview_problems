@@ -45,15 +45,15 @@ void Duplicate::fill_table()
 	}
 }
 
-std::set<std::string> Duplicate::find_dublicate()
+std::vector<std::string> Duplicate::find_dublicate()
 {
 	std::map<std::string, size_t>::iterator iter;
-	std::set<std::string> duplicate_words;
+	std::vector<std::string> duplicate_words;
 	for (iter = m_data.begin(); iter != m_data.end(); iter++)
 	{
 		if (iter->second > 1)
 		{
-			duplicate_words.insert(iter->first);
+			duplicate_words.push_back(iter->first);
 		}
 	}
 	return duplicate_words;

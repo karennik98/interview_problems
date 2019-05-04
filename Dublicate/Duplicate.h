@@ -5,7 +5,7 @@
 #include <string>
 #include <functional>
 #include <map>
-#include <set>
+#include <vector>
 
 class Duplicate
 {
@@ -13,7 +13,7 @@ public:
     Duplicate() = default;
     Duplicate(std::string file_name);
     void open(std::string file_name);
-    std::set<std::string> find_dublicate();
+    std::vector<std::string> find_dublicate();
     size_t count();
 private:
     void fill_table();
