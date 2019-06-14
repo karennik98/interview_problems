@@ -1,2 +1,20 @@
 
 dublicate/exe
+merge_two_sorted_arrays/.vs/merge_two_sorted_arrays/v15/.suo
+.db
+*.suo
+*.db
+*.exe
+*.ilk
+*.pdb
+*.log
+*.obj
+*.pch
+*.tlog
+*.ipch
+*.idb
+*.vcxproj
+*.filters
+*.txt
+*.sln
+*.user
