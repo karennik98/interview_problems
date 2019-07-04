@@ -1,6 +1,7 @@
 #include <iostream>
 #include <memory>
 #include <assert.h>
+#include <forward_list>
 
 template <typename T>
 struct list_node
@@ -50,7 +51,6 @@ void reverse_list(list_node<T>* head)
 	}
 	head = curr;
 }
-
 
 int main()
 {
